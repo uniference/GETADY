@@ -1,1 +1,21 @@
-<p>create-ad works!</p>
+<form #formRegister="ngForm" (ngSubmit)="onAddUser()">
+    <div class="row espacio">
+            <div class="md-form col">
+                    <input type="text" name="titulo" class="form-control" placeholder="Titulo" [(ngModel)]="titulo" required minlength="8">
+            </div>
+                
+                <div class="input-group col">
+                    <input class="form-control" placeholder="yyyy-mm-dd" name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary calendar" (click)="d.toggle()" type="button"><i class="far fa-calendar-alt"></i></button>
+                    </div>
+                </div>            
+    </div>
+
+    
+     
+</form>
+
+<mat-form-field>
+        <textarea matInput placeholder="Textarea"></textarea>
+    </mat-form-field>

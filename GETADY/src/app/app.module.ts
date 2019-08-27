@@ -10,8 +10,13 @@ import { LoginComponent } from './componentes/user/login/login.component';
 import { RegisterComponent } from './componentes/user/register/register.component';
 import { CreateAdComponent } from './componentes/create-ad/create-ad.component';
 import { PeriodComponent } from './componentes/period/period.component';
-import { FormsModule } from '@angular/forms';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatButtonModule} from '@angular/material/button';
+import {MatTableModule} from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -27,7 +32,14 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    NgbModule,
+    AngularFontAwesomeModule,
+    MDBBootstrapModule.forRoot(),
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatTableModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

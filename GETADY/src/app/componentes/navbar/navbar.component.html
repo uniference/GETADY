@@ -1,5 +1,5 @@
-<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
-    <a class="navbar-brand" routerLink="/">{{app_name}}</a>
+<nav class="navbar navbar-expand-md fixed-top">
+    <a class="navbar-brand black-title-text" routerLink="/">{{app_name}}</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar"
       aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -8,21 +8,25 @@
     <div class="collapse navbar-collapse" id="mainNavbar">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item" *ngIf="!isLogged">
-          <a class="nav-link" routerLink="period">Period
+            <a class="nav-link black-text" routerLink="create-ad"><i class="fas fa-edit"></i>&nbsp;Crear Anuncio
+            </a>
+        </li>
+        <li class="nav-item" *ngIf="!isLogged">
+          <a class="nav-link black-text" routerLink="period"><i class="far fa-clock"></i>&nbsp;Periodos
           </a>
         </li>
       </ul>
       <ul class="navbar-nav ml-auto">
         <li class="nav-item" *ngIf="!isLogged">
-          <a class="nav-link" routerLink="user/register">Register
+          <a class="nav-link black-text" routerLink="user/register"><i class="fas fa-user-plus"></i>&nbsp;Registrarse
           </a>
         </li>
         <li class="nav-item" *ngIf="!isLogged">
-          <a class="nav-link" routerLink="user/login">Login
+          <a class="nav-link black-text" routerLink="user/login"><i class="fas fa-user-circle"></i>&nbsp;Iniciar Sesion
           </a>
         </li>
         <li class="nav-item" *ngIf="isLogged">
-          <a href="#" class="nav-link">Logout
+          <a href="#" class="nav-link black-text"><i class="fas fa-sign-out-alt"></i>&nbsp;Cerrar Sesion
           </a>
         </li>
       </ul>

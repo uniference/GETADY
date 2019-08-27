@@ -1,0 +1,31 @@
+nav{
+    background: #79c9ff;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.black-text{
+    color: black;
+    padding-top: 21px;
+    padding-bottom: 21px;
+}
+
+.black-title-text{
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.black-text:hover{
+    background-color: #006ccb;
+    color: white;
+    font-weight: bold;
+    border-radius: 10%
+}
+
+.black-text:focus{
+    background-color: #ffd95b;
+    color: black;
+    font-weight: bold;
+    border-radius: 10%
+}
