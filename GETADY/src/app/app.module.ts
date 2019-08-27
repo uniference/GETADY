@@ -10,6 +10,8 @@ import { LoginComponent } from './componentes/user/login/login.component';
 import { RegisterComponent } from './componentes/user/register/register.component';
 import { CreateAdComponent } from './componentes/create-ad/create-ad.component';
 import { PeriodComponent } from './componentes/period/period.component';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +26,8 @@ import { PeriodComponent } from './componentes/period/period.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
