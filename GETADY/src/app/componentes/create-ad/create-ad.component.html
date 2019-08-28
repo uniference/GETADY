@@ -1,23 +1,39 @@
-<form #formRegister="ngForm" (ngSubmit)="onAddUser()">
-    <div class="espacio">
-            <div class="md-form ">
-                    <input type="text" name="titulo" class="form-control" placeholder="Titulo" [(ngModel)]="titulo" required minlength="8">
-            </div>
-                
-             
-                    
-                    <div class="input-group-append">
-                            <input class="form-control" placeholder="yyyy-mm-dd" name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker">
-                        <button class="btn btn-outline-secondary calendar" (click)="d.toggle()" type="button"><i class="far fa-calendar-alt"></i></button>
+<form #formRegister="ngForm" class="text-center">
+    <div class="contenedor mx-auto">
+        <mdb-card cascade="true" wider="true">
+            <div class="view view-cascade gradient-card-header peach-gradient redondeo">
+                <mat-form-field appearance="outline" class="titulo">
+                    <mat-label>Titulo</mat-label>
+                    <input type="text" name="titulo" [(ngModel)]="titulo" required matInput placeholder="Coloque su titulo del anuncio aqui" class="">
+                </mat-form-field>
+                <hr>Fecha y Hora
+                <div class="form-row">
+                    <div class="col my-auto fecha">
+                        <div class="input-group">
+                            <input id="dateOfBirth" class="form-control" placeholder="yyyy-mm-dd" name="dp" ngbDatepicker #dp="ngbDatepicker">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary calendar" (click)="dp.toggle()" type="button"><i class="far fa-calendar-alt"></i></button>
+                            </div>
+                        </div>
                     </div>
-                  
+                    
+                    <div class="col my-auto px-3">
+                        <ngb-timepicker name="time" [(ngModel)]="time"></ngb-timepicker>     
+                    </div>
+                </div>
+            </div>
+            
+            <mdb-card-body cascade="true" class="text-center">
+                <div class="md-form">
+                    <textarea type="text" id="form7" class="md-textarea md-textarea-auto form-control" rows="7" mdbInput></textarea>
+                    <label for="form7">Contenido</label>
+                </div>
+
+                <div class="card-footer text-center mt-3 flex">
+                    <button type="submit" class="btn btn-lg btn-primary btn-block"><i class="fas fa-sign-in-alt"></i>&nbsp;Registrar</button>
+                </div>
+            </mdb-card-body>
+        </mdb-card>
     </div>
-    <mat-form-field>
-        <textarea matInput placeholder="Textarea"></textarea>
-    </mat-form-field>
-
-
-    
-     
 </form>
 

@@ -14,14 +14,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatButtonModule} from '@angular/material/button';
-import {MatTableModule} from '@angular/material/table';
-import {
-  MatFormFieldModule,
-  MatInputModule,
-  MatRippleModule
-} from '@angular/material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button';
+import { MatTableModule } from '@angular/material/table';
+import { MatFormFieldModule, MatInputModule, MatRippleModule } from '@angular/material';
+import { MatIconModule } from '@angular/material/icon';
+import { TimepickerModule } from 'ngx-bootstrap/timepicker';
+
 
 @NgModule({
   declarations: [
@@ -47,7 +46,9 @@ import {
     ReactiveFormsModule,
     MatFormFieldModule,
     MatInputModule,
-    MatRippleModule
+    MatRippleModule,
+    MatIconModule,
+    TimepickerModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
