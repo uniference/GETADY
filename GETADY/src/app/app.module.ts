@@ -20,6 +20,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatFormFieldModule, MatInputModule, MatRippleModule } from '@angular/material';
 import { MatIconModule } from '@angular/material/icon';
 import { TimepickerModule } from 'ngx-bootstrap/timepicker';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -48,7 +49,8 @@ import { TimepickerModule } from 'ngx-bootstrap/timepicker';
     MatInputModule,
     MatRippleModule,
     MatIconModule,
-    TimepickerModule.forRoot()
+    TimepickerModule.forRoot(),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,10 +1,10 @@
 <form #formRegister="ngForm" class="text-center">
     <div class="contenedor mx-auto">
         <mdb-card cascade="true" wider="true">
-            <div class="view view-cascade gradient-card-header peach-gradient redondeo">
-                <mat-form-field appearance="outline" class="titulo">
-                    <mat-label>Titulo</mat-label>
-                    <input type="text" name="titulo" [(ngModel)]="titulo" required matInput placeholder="Coloque su titulo del anuncio aqui" class="">
+            <div class="view redondeo-cabecera">
+                <mat-form-field appearance="outline" class="titulo clr" [color]="warn">
+                    <mat-label class="clr-blanc clr">Titulo</mat-label>
+                    <input type="text" name="titulo" [(ngModel)]="titulo" required matInput placeholder="Coloque su titulo del anuncio aqui" class="clr-blanc clr">
                 </mat-form-field>
                 <hr>Fecha y Hora
                 <div class="form-row">
@@ -23,16 +23,16 @@
                 </div>
             </div>
             
-            <mdb-card-body cascade="true" class="text-center">
+            <mdb-card-body cascade="true" class="text-center redondeo-cuerpo">
                 <div class="md-form">
                     <textarea type="text" id="form7" class="md-textarea md-textarea-auto form-control" rows="7" mdbInput></textarea>
                     <label for="form7">Contenido</label>
                 </div>
-
-                <div class="card-footer text-center mt-3 flex">
-                    <button type="submit" class="btn btn-lg btn-primary btn-block"><i class="fas fa-sign-in-alt"></i>&nbsp;Registrar</button>
-                </div>
             </mdb-card-body>
+
+            <div class="card-footer text-center redondeo-footer">
+                <button type="submit" class="btn btn-lg btn-primary btn-block redondeo-boton"><i class="fas fa-sign-in-alt"></i>&nbsp;Registrar</button>
+            </div>
         </mdb-card>
     </div>
 </form>

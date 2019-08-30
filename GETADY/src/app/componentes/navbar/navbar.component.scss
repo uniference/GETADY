@@ -1,31 +1,31 @@
 nav{
-    background: #79c9ff;
+    background: #1E1E2C;
     padding-top: 0px;
     padding-bottom: 0px;
 }
 
-.black-text{
-    color: black;
+.white-text{
+    color: white !important;
     padding-top: 21px;
     padding-bottom: 21px;
 }
 
-.black-title-text{
-    color: black;
+.white-title-text{
+    color: white !important;
     font-weight: bold;
     font-size: 25px;
 }
 
-.black-text:hover{
-    background-color: #006ccb;
-    color: white;
+.white-text:hover{
+    background-color: #2d2d44;
+    color: #33e1ed !important;
     font-weight: bold;
     border-radius: 10%
 }
 
-.black-text:focus{
-    background-color: #ffd95b;
-    color: black;
+.white-text:focus{
+    background-color: #33e1ed;
+    color: white !important;
     font-weight: bold;
     border-radius: 10%
 }
