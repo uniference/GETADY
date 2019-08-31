@@ -32,11 +32,11 @@
 
 .redondeo-footer{
     width: 100%;
-    background: #e2f6d5;
+    background: #f9f4f5;
 }
 
 .redondeo-cuerpo{
-    background: #ffffff;
+    background: #e1e0e0;
 }
 
 .contenedor{
@@ -49,11 +49,13 @@
     border-radius: 35%;
     width: 50%;
     margin: auto;
-    background: #ff2585;
-    border: 0;
+    background: #98063a;
     font-weight: bold;
+    color: white;
   }
 
+  .btn:focus {outline:0;}
+  
 hr{
     background: white;
 }
@@ -74,13 +76,13 @@ hr{
 
 //input outline color
 ::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
-    color: red!important;
+    color: white!important;
     // opacity: 1!important;
 }
 
 //mat-input focused color
 ::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
-    color: red!important;
+    color: blue!important;
 }
 
 // mat-input error outline color
@@ -101,7 +103,7 @@ hr{
 
 // mat-label normal state style
 ::ng-deep .mat-form-field-label {
-    color: rgba(0,0,0,.6)!important;
+    color: white!important;
     // color: $mainColor!important;
 }
 
